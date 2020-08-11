@@ -13,6 +13,7 @@ The decision of removal is based on a variety of factors, such as:
 
 The purpose of the project is to model the manager’s decision process for this situation.  
 Ideally, this will be a simple counting system in which pre-defined points accumulate when certain events happen during a pitcher’s start, like him throwing a pitch, giving up a hit, a walk or an inning concluding. 
+
 Typically, managers pull a pitcher when they have started to perform poorly. However, the team thinks that managers try to get ahead of this performance drop and as a result the pitcher being removed typically represents the manager's best estimate of this change point. 
 
 There is no preference for reducing either the false positives or false negatives. The tradeoff would be very dependent on the game state and the availability of other members of the bullpen. For instance, if the team has a one run lead and the 
