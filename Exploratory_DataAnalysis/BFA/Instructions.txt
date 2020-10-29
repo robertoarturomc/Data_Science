@@ -1,0 +1,22 @@
+Instructions:
+-------------
+
+You are given four files containing data on clients, savings accounts, transactions conducted by those accounts, and balances at various points of time for those accounts. They have anonymized information on ~2,800 clients and accounts, and represent about 1% of a dataset BFA has worked with in the past.
+
+Your PRIMARY task is to calculate average monthly balances for all the months that the we have account data for. This involves stitching the transactions with the balance file to obtain running balances. The balance data contains some but possibly not all of the balances at the end of each transaction. 
+
+For simplicity, it is acceptable for you to take the end of month balances and stitch in the transactions in between. You are welcome to use more balance data from the middle of the month, but this is not necessary.
+
+You must report the average balances in the following format:
+
+	acct_id, yyyymm, avg_balance
+
+An account will have one line for every month we have data for. If there are months in the middle where we don't have any data, you will fill that month with the data from the previous month. 
+
+The average month itself is calculated on a weighted basis. This, if there are 10 days with a balance of 10, and 20 days with a balance of 5, the weighted average balance for the month is ((10 x 10 + 20 x 5) / 30) = 6.67. 
+
+Your SECONDARY task is more freeform. You are provided with additional information about the clients and accounts. You know the clients' gender, date of birth and enrollment dates. You also know the type of product (A or B), the date the account was opened, opening balance and close date if any. You are invited to use this information to provide us with additional information as you see fit. This can be other metrics of interest, time series analysis, visualizations, and frankly anything else you fancy. Consider this an opportunity to showcase specific abilities. 
+
+You are requested to use R or Python to complete this exercise. 
+
+If you have any questions, please email Jorge at jhernandez@bfaglobal.com AND Ash at aamin@bfaglobal.com. 
